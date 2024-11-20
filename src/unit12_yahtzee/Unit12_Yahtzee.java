@@ -88,7 +88,6 @@ public class Unit12_Yahtzee {
         return score; 
     }
 
-    
     // ========================================================
     // CHANCE - used for any set of dice  
     // score is the sum of the dice
@@ -99,6 +98,35 @@ public class Unit12_Yahtzee {
         
         return score; 
     }
+        
+    // --------------------------------------------------------
+    // countValue - utility method to count how many die of a given value are in dice
+    // --------------------------------------------------------
+    public static int countValue(ArrayList<Integer> dice, int value) {
+        int count = 0;
+        for (int die : dice) {
+            if (die == value) {
+                count = count + 1;
+            }
+        }
+        return count;
+    }
+    
+    // --------------------------------------------------------
+    // sumDice - utility method to total the values in dice
+    // --------------------------------------------------------
+    public static int sumDice (ArrayList<Integer> dice) {
+        int sum = 0;
+        for (int die : dice) {
+            sum = sum + die;
+        }
+        return sum;
+    }
+    
+    // --------------------------------------------------------
+    // To sort the dice, use the following
+    //     Collections.sort (dice);
+    // --------------------------------------------------------
 
     public static void main(String[] args) {
         ArrayList<Integer> dice = new ArrayList<>();
