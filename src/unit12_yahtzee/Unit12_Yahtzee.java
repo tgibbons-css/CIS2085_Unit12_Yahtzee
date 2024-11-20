@@ -23,7 +23,7 @@ public class Unit12_Yahtzee {
     
     // ========================================================
     // THREE OF A KIND - Check if there are three dice of the same value.  
-    // score is the sum of 3+ dice of the same value or zero if not 3-of-a-kind
+    // score is the sum of all of the dice or zero if there is not 3-of-a-kind
     // ========================================================
     public static int threeOfAKind(ArrayList<Integer> dice) {
         Integer score = 0;
@@ -34,7 +34,7 @@ public class Unit12_Yahtzee {
     
     // ========================================================
     // FOUR OF A KIND - Check if there are three dice of the same value.  
-    // score is the sum of 3+ dice of the same value or zero if not 4-of-a-kind
+    // score is the sum of all of the dice or zero if not 4-of-a-kind
     // ========================================================
     public static int fourOfAKind(ArrayList<Integer> dice) {
         Integer score = 0;
